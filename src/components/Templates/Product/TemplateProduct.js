@@ -94,7 +94,7 @@ function TemplateProduct() {
     <>
       <NavbarProduct />
       <div>
-        <Container className="form-products">
+        <Container fluid className="form-products p-0">
           <form onSubmit={handleSubmit}>
             <Row>
               <Col>
@@ -109,7 +109,7 @@ function TemplateProduct() {
                   categoryId={setCategoryId}
                   description={setDescription}
                 />
-                <Form.Group className="mx-5 mb-3" controlId="productPhoto">
+                <Form.Group className="mb-3" controlId="productPhoto">
                   <Form.Label>Foto Produk</Form.Label>
                   {image && image.map(({ images, index }) => {
                     return (
@@ -131,7 +131,7 @@ function TemplateProduct() {
                 </Form.Group>
               </Col>
             </Row>
-            <Row className="mx-5 mb-5">
+            <Row className="mb-5">
               <Col xs={6}>
                 <Link to={`/seller/product/${params.id}`}>
                   <Button variant="primary" className="preview-button" type="submit">

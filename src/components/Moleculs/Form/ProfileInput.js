@@ -74,7 +74,7 @@ function ProfileInput({
   }, []);
 
   return isLoggedIn ? (
-    <div className="mt-5 mb-3 mx-5 profile-input">
+    <div className="mt-5 mb-3 profile-input">
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Nama</Form.Label>

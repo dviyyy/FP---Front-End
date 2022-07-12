@@ -71,7 +71,7 @@ function InputCategory({ inputCategory }) {
         ...styles,
         color: 'black',
         cursor: isDisabled ? 'not-allowed' : 'default',
-        borderRadius: '12px',
+        borderRadius: '14px',
         zIndex: '2',
       };
     },
@@ -83,7 +83,7 @@ function InputCategory({ inputCategory }) {
 
   return (
     <div className="mb-3">
-      <Form styles={{ borderRadius: '16px', zIndex: '2' }}>
+      <Form className="form-category" styles={categoryStyles}>
         <Select options={categoryId} onChange={handleGetValue} styles={categoryStyles} />
       </Form>
     </div>

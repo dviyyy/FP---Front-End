@@ -84,7 +84,7 @@ function TemplateProfile() {
     <>
       <NavbarProfile />
       <div>
-        <Container className="profile">
+        <Container fluid className="profile p-0">
           <Row>
             <Col>
               <div style={{ paddingTop: '30px' }}>
@@ -114,7 +114,7 @@ function TemplateProfile() {
                   phoneNumber={setPhoneNumber}
                   address={setAddress}
                 />
-                <Button className="mt-3 mb-3 mx-5 btn-profile" variant="custom" type="submit" style={{ width: '85%' }}>
+                <Button className="mt-3 mb-3 btn-profile" variant="custom" type="submit" style={{ width: '100%' }}>
                   Simpan
                   {loading && (
                   <span className="spinner-border spinner-border-sm" />

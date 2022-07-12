@@ -1,18 +1,22 @@
 .form-list {
-    border-radius: 4px;
+    border-radius: 14px;
     width: 100%;
     height: 100%;
 }
 
 .form-desc {
-    border-radius: 4px;
+    border-radius: 14px;
     width: 100%;
     height: 90px;
 }
 
+.form-category {
+    border-radius: 14px;
+}
+
 .text-city,
 .text-category {
-    border-radius: 16px;
+    border-radius: 14px;
     width: 100%;
     height: 100%;
 }
