@@ -22,7 +22,6 @@ function CardDescription({ productById }) {
             </Card.Body>
           </Card>
         </Col>
-        <Col />
       </Row>
     </Container>
   );

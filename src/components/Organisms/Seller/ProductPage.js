@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Container,
   Row,
@@ -13,13 +13,22 @@ import CardDescription from '../../Moleculs/Card/CardDescription';
 function ProductPage({
   productById, categoryName, productImage, seller, city,
 }) {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      const mobile = window.innerWidth < 600;
+      if (mobile !== isMobile) {
+        setIsMobile(mobile);
+      }
+    }, false);
+  }, [isMobile]);
   return (
-    <Container className="mt-5">
+    <Container className={`${isMobile ? 'mt-2' : 'mt-5'}`}>
       <Row>
-        <Col xs={6}>
+        <Col md={6} className={`${isMobile ? 'mx-1' : ''}`}>
           <CarouselProduct productImage={productImage} />
         </Col>
-        <Col xs={6}>
+        <Col md={6}>
           <CardProduct productById={productById} categoryName={categoryName} />
           <CardSeller seller={seller} city={city} />
         </Col>

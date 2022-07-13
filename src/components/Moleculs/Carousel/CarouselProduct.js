@@ -23,7 +23,7 @@ function CarouselProduct({ productImage }) {
     return (
       <SwiperSlide>
         <div className="card-carousel">
-          <img src={images} style={{ width: '100%', borderRadius: '16px' }} alt="" />
+          <img src={images} style={{ width: '100%', borderRadius: '16px' }} className="image-fluid" alt="" />
         </div>
       </SwiperSlide>
       // console.log(images)

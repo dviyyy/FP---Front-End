@@ -22,10 +22,10 @@
 }
 
 .card-product {
-  top: 10px;
+  top: -30px;
   width: 430px;
   height: 300px;
-  border-radius: 16px;
+  border-radius: 20px;
   z-index: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
@@ -69,9 +69,9 @@
 
 .card-desc {
   top: 30px;
-  width: 90%;
+  width: 45%;
   height: 100%;
-  margin-left: 5%;
+  margin-left: 2%;
   border-radius: 16px;
   line-height: 20px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
@@ -189,4 +189,30 @@
   border-color: #7126B5;
   color: black;
   border-radius: 16px;
+}
+
+@media (max-width:600px) {
+  .card-product{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    top: -40px;
+  }
+  .seller-card {
+    width: 100%;
+    height: auto;
+    top:-40px;
+    margin: auto;
+    /* margin-left: -4%; */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-desc {
+    top: -73px;
+    width: 100%;
+    height: 98%;
+    margin: auto;
+    /* margin-left: 0%; */
+  }
 }
