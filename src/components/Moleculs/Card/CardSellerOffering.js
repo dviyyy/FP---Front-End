@@ -24,7 +24,7 @@ function CardSeller({ buyerInfo, buyerCity }) {
         <Card.Body>
           <Row>
             <Col xs={3}>
-              <img src={`${process.env.PUBLIC_URL}/images/seller_pic.png`} style={{ width: '60%' }} alt="" className="image-seller-offering" />
+              <img src={`${process.env.PUBLIC_URL}/images/seller_pic.png`} style={{ width: '80%' }} alt="" />
             </Col>
             <Col xs={9} className="pt-3">
               <h5 style={{ fontWeight: 'bold' }}>Safira</h5>

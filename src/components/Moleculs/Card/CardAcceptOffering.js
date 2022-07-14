@@ -21,28 +21,28 @@ function CardHistory(props) {
       <Title title="Daftar Produkmu Yang Ditawar" />
       <Card className="card-items-offering" style={{ borderRadius: '16px' }}>
         <Row>
-          <Col xs={2}>
-            <Card.Img src={image} className="mt-4 mx-3 card-img-top image-offering" alt={imageAlt} />
+          <Col xs={3}>
+            <Card.Img src={image} className="mt-4 card-img-top image-accept-offering" alt={imageAlt} style={{ borderRadius: '16px' }} />
           </Col>
-          <Col xs={10}>
+          <Col xs={9}>
             <Card.Body>
               <Card.Title style={{ fontSize: '10px', color: 'grey' }}>{title}</Card.Title>
               <Card.Title>{name}</Card.Title>
               <Card.Text>{price}</Card.Text>
               <Card.Text>{offering}</Card.Text>
             </Card.Body>
-            <div className="justify-content-end button-align">
-              <VerticalModals
-                show={modalShow}
-                onHide={() => { return setModalShow(false); }}
-              />
-              <Button variant="secondary" className="button-accept">
-                Hubungi di
-                {' '}
-                <FaWhatsapp />
-              </Button>
-            </div>
           </Col>
+          <div className="justify-content-end button-align">
+            <VerticalModals
+              show={modalShow}
+              onHide={() => { return setModalShow(false); }}
+            />
+            <Button variant="secondary" className="button-accept">
+              Hubungi di
+              {' '}
+              <FaWhatsapp />
+            </Button>
+          </div>
         </Row>
       </Card>
     </Container>
