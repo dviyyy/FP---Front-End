@@ -25,7 +25,7 @@ function ProductPage({
   return (
     <Container className={`${isMobile ? 'mt-2' : 'mt-5'}`}>
       <Row>
-        <Col md={6} className={`${isMobile ? 'mx-1' : ''}`}>
+        <Col md={6}>
           <CarouselProduct productImage={productImage} />
         </Col>
         <Col md={6}>

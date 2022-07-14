@@ -13,7 +13,7 @@ function CardDescription({ productById }) {
     <Container>
       <Row>
         <Col>
-          <Card className="card-desc">
+          <Card className="card-desc" style={{ borderRadius: '16px' }}>
             <Card.Body>
               <h5 style={{ fontWeight: 'bold' }}>Deskripsi</h5>
               <p>

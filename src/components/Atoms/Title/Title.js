@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// import './Label.Module.css';
+import './Title.Module.css';
 
 function TitleList(props) {
   const { title } = props;

@@ -16,10 +16,10 @@ function ProductPageSeller({
   return (
     <Container className="mt-5">
       <Row>
-        <Col xs={6}>
+        <Col md={6}>
           <CarouselProduct productImage={productImage} />
         </Col>
-        <Col xs={6}>
+        <Col md={6}>
           <CardProductBtn productById={productById} categoryName={categoryName} />
           <CardSeller seller={seller} city={city} />
         </Col>

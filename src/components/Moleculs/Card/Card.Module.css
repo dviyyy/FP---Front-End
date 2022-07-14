@@ -22,11 +22,8 @@
 }
 
 .card-product {
-  top: -30px;
   width: 430px;
   height: 300px;
-  border-radius: 20px;
-  z-index: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -62,8 +59,7 @@
 }
 
 .seller-offering {
-  height: 100px;
-  border-radius: 16px;
+  height: 10%;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -72,7 +68,7 @@
   width: 45%;
   height: 100%;
   margin-left: 2%;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   line-height: 20px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
@@ -96,10 +92,8 @@
   width: 95%;
   height: 50px;
   margin: 10px;
-  background-color: #7126B5;
   border-color: #7126B5;
   color: white;
-  border-radius: 16px;
 }
 
 .button-seller:hover {
@@ -139,8 +133,7 @@
 }
 
 .image-offering {
-  width: 100%;
-  border-radius: 16px;
+  margin-left: 10%;
 }
 
 .card-body-offering {
@@ -151,9 +144,9 @@
   background-color: white;
   border-color: #7126B5;
   color: black;
-  border-radius: 16px;
-  margin-right: 10px;
-  width: 158px;
+  margin-right: 7px;
+  width: 155px;
+  height: fit-content;
 }
 
 .button-deny:hover {
@@ -166,8 +159,8 @@
   border-color: #7126B5;
   color: white;
   border-radius: 16px;
-  margin-right: 10px;
-  width: 158px;
+  margin-right: 7px;
+  width: 155px;
 }
 
 .button-accept:hover {
@@ -197,7 +190,12 @@
     width: 100%;
     height: auto;
     align-content: center;
-    top: -40px;
+    z-index: 1;
+  top: -30px;
+  }
+
+  .image-card-seller {
+    height: 50%;
   }
   .seller-card {
     width: 100%;
@@ -215,4 +213,48 @@
     margin: auto;
     /* margin-left: 0%; */
   }
+
+  .seller-offering {
+    height: auto;
+    width: 110%;
+  }
+
+  .image-seller-offering {
+    height: 80%;
+  }
+
+  .image-offering {
+    height: 40%;
+  }
+
+  .button-align {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 5%;
+  }
+
+  .button-deny {
+    margin-top: 15px;
+    margin-left: 5%;
+  }
+
+  .card-bargain{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    z-index: 1;
+    top: -30px;
+  }
+
+  .card-product-btn {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    z-index: 1;
+    top: -30px;
+  }
+  
 }

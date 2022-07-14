@@ -34,7 +34,7 @@ function CardBargain({ productById, categoryName }) {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <Container>
-      <Card className="card-bargain">
+      <Card className="card-bargain" style={{ borderRadius: '16px' }}>
         <Card.Body>
           <h5 style={{ fontWeight: 'bold' }}>{productById.name}</h5>
           <p style={{ color: 'grey' }}>{categoryName.name}</p>

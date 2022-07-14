@@ -27,28 +27,28 @@ function CardHistory(props) {
       <Title title="Daftar Produkmu Yang Ditawar" />
       <Card className="card-items-offering" style={{ borderRadius: '16px' }}>
         <Row>
-          <Col xs={2}>
-            <Card.Img src={image} className="mt-4 mx-3 card-img-top image-offering" alt={imageAlt} />
+          <Col xs={3}>
+            <Card.Img src={image} style={{ borderRadius: '16px' }} className="mt-4 card-img-top image-offering" alt={imageAlt} />
           </Col>
-          <Col xs={10}>
+          <Col xs={9}>
             <Card.Body>
               <Card.Title style={{ fontSize: '10px', color: 'grey' }}>{title}</Card.Title>
               <Card.Title>{name}</Card.Title>
               <Card.Text>{price}</Card.Text>
               <Card.Text>{offering}</Card.Text>
             </Card.Body>
-            <div className="justify-content-end button-align">
-              {hiddenButton && (
-                <>
-                  <Button variant="secondary" className="button-deny" onClick={handleHiddenButton}>Tolak</Button>
-                  <VerticalModals
-                    show={modalShow}
-                    onHide={() => { return setModalShow(false); }}
-                  />
-                </>
-              )}
-            </div>
           </Col>
+          <div className="justify-content-end button-align">
+            {hiddenButton && (
+            <>
+              <Button variant="secondary" className="button-deny" style={{ borderRadius: '16px' }} onClick={handleHiddenButton}>Tolak</Button>
+              <VerticalModals
+                show={modalShow}
+                onHide={() => { return setModalShow(false); }}
+              />
+            </>
+            )}
+          </div>
         </Row>
       </Card>
     </Container>
